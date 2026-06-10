@@ -1,0 +1,28 @@
+Origin: Simply IP Services
+Label: Simply IP Services - Releases
+Codename: stable
+Date: Wed, 10 Jun 2026 11:42:43 UTC
+Architectures: amd64 arm64
+Components: main
+Description: Simply IP Services Debian package repository
+MD5Sum:
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-amd64/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main/binary-amd64/Packages.gz
+ 0b204b4f968f01682d4afe9a588349af 158 main/binary-amd64/Release
+ f0861d734c94b09fcbc5fbf4294ae5fe 590 main/binary-arm64/Packages
+ a2dd422cc9cf61f25c41fe315edf0f18 380 main/binary-arm64/Packages.gz
+ 88773916f1a5a49377c800a38bbe05e2 158 main/binary-arm64/Release
+SHA1:
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-amd64/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-amd64/Packages.gz
+ e2e9b43602a31f5bdd831c5bb8e37f3f38d09cd0 158 main/binary-amd64/Release
+ ec357dea5ff032d365fa28d34cc0359b90e20ed3 590 main/binary-arm64/Packages
+ 5437c32464d4ea4ad1e7aa5ba32e052af57f3a18 380 main/binary-arm64/Packages.gz
+ 9e8353b77c1346304ffdb20670cb72d67579c66b 158 main/binary-arm64/Release
+SHA256:
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-amd64/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-amd64/Packages.gz
+ a5df6306ae758d5855c4f9b827daa768f7d4aec0a75f70825baa270f3b49d775 158 main/binary-amd64/Release
+ 95ddb1d68f1cc2f761d75e70faf6f97d542ef2b954206ed5aebaec437e9c1af1 590 main/binary-arm64/Packages
+ 0d437e8319bafb092ed3786e954c41406a489283b446635cbe2e4c27d8c9c9f7 380 main/binary-arm64/Packages.gz
+ 311b5d70f89ef761566691b3abb1ebd3ac8716ff97acb2abe4d0618176fdbca9 158 main/binary-arm64/Release

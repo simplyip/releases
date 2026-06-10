@@ -1,0 +1,5 @@
+Component: main
+Origin: Simply IP Services
+Label: Simply IP Services - Releases
+Architecture: amd64
+Description: Simply IP Services Debian package repository

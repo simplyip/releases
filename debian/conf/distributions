@@ -1,0 +1,7 @@
+Origin: Simply IP Services
+Label: Simply IP Services - Releases
+Codename: stable
+Architectures: amd64 arm64
+Components: main
+Description: Simply IP Services Debian package repository
+SignWith: default
