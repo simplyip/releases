@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 
-# Run with: curl -fsSL https://releases.simplyip.services/debian/install.sh | sudo bash
+# Run with: 
+
+
+# curl -fsSL https://releases.simplyip.services/debian/install.sh | sudo bash
 
 set -euo pipefail
 
-REPO_URL="https://releases.simplyip.services/releases/debian"
+REPO_URL="https://releases.simplyip.services/debian"
 KEY_URL="${REPO_URL}/repo.asc"
 KEYRING_PATH="/usr/share/keyrings/simplyip.gpg"
 SOURCE_LIST_PATH="/etc/apt/sources.list.d/simplyip.list"

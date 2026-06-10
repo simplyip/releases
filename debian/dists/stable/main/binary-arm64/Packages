@@ -1,16 +1,16 @@
 Package: sips-site-gateway
-Version: 0.1.7-1
+Version: 0.1.8-1
 Maintainer: Unknown <Unknown>
 Architecture: arm64
 Provides: sips-site-gateway
 Priority: optional
 Section: misc
-Filename: pool/main/s/sips-site-gateway/sips-site-gateway_0.1.7-1_arm64.deb
-Size: 61288790
-SHA256: cfcb2ca85dfb7d62c87c6e9aa9b12f31f312b670f945e125e54ce6b284f084f1
-SHA1: 9cc61d987a3896c80e833420a2a29a97923f07e5
-MD5sum: b8435928edda1ff8e5887e88a76da5e9
+Filename: pool/main/s/sips-site-gateway/sips-site-gateway_0.1.8-1_arm64.deb
+Size: 61298922
+SHA256: 9c2fd68254626f4aad4bce3a85b2c790777101f0f6d5940866650ecaa74f5445
+SHA1: 929ceedad931f1682129deca9e542f0defb79491
+MD5sum: f26a041f0a2065046abaa69f8bb081f1
 Description: sips-site-gateway
 Depends: libasound2t64, libbsd0, libc6, libmd0, libx11-6, libxau6, libxcb1, libxdmcp6, libxext6, libxi6, libxrender1, libxtst6 
-Installed-Size: 173150
+Installed-Size: 172310
 
