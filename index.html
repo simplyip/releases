@@ -1,6 +1,180 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simply IP Services - Releases</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f6f8fb;
+      color: #1f2933;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #102a43;
+      color: white;
+      padding: 48px 24px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      margin: 12px 0 0;
+      color: #d9e2ec;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+
+    section {
+      background: white;
+      border-radius: 14px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(16, 42, 67, 0.08);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #102a43;
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      color: #243b53;
+      margin-bottom: 8px;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    pre {
+      background: #0b1220;
+      color: #e5e7eb;
+      padding: 16px;
+      border-radius: 10px;
+      overflow-x: auto;
+      font-size: 0.95rem;
+    }
+
+    .note {
+      background: #eef6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 14px 16px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      color: #627d98;
+      font-size: 0.9rem;
+      padding: 24px;
+    }
+  </style>
+</head>
 <body>
-<h1>Simply IP Services - Releases Repo</h1>
+
+<header>
+  <h1>Simply IP Services - Releases</h1>
+  <p>Software packages for supported edge devices and servers.</p>
+</header>
+
+<main>
+  <section>
+    <h2>Overview</h2>
+    <p>
+      This repository provides access to software published by Simply IP Services
+      for deployment on supported edge devices and servers.
+    </p>
+    <p>
+      Our applications are primarily designed to run on Debian-based Linux systems,
+      including Raspberry Pi devices, and can be installed and updated using the
+      standard APT package manager.
+    </p>
+  </section>
+
+  <section>
+    <h2>Available Applications</h2>
+
+    <h3>Site Gateway</h3>
+    <p>
+      The Site Gateway app provides a secure bridge between devices on your local
+      network and our cloud services, enabling two-way communication without
+      compromising security.
+    </p>
+    <p>
+      The app is used by a number of Simply IP Services solutions, including
+      Gatekeeper, and enables our cloud-based applications to communicate with
+      specific local devices such as cameras, controllers and sensors, which would
+      otherwise be inaccessible from the internet.
+    </p>
+    <p>
+      Once installed, the gateway can be configured to connect to our services and
+      will automatically receive updates through the Simply IP Services repository.
+    </p>
+  </section>
+
+  <section>
+    <h2>Installation</h2>
+    <p>
+      To install any of our applications, first add the Simply IP Services repository
+      to your device. This can be done with our one-line installation script:
+    </p>
+
+    <pre><code>curl -fsSL https://releases.simplyip.services/debian/install.sh | sudo bash</code></pre>
+
+    <p>If you prefer to add the repository manually:</p>
+
+    <pre><code>sudo apt update
+sudo apt install -y ca-certificates curl gnupg
+
+curl -fsSL https://releases.simplyip.services/debian/repo.asc \
+  | sudo gpg --dearmor -o /usr/share/keyrings/sips.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/sips.gpg] https://releases.simplyip.services/debian stable main" \
+  | sudo tee /etc/apt/sources.list.d/sips.list
+
+sudo apt update</code></pre>
+  </section>
+
+  <section>
+    <h2>Installing an App</h2>
+    <p>
+      Once the repository has been added, you can install individual applications
+      using APT.
+    </p>
+
+    <pre><code>sudo apt install sips-site-gateway</code></pre>
+
+    <h3>Check the installed version</h3>
+    <pre><code>dpkg -l | grep sips-site-gateway</code></pre>
+
+    <h3>Update an app</h3>
+    <pre><code>sudo apt update
+sudo apt install sips-site-gateway</code></pre>
+
+    <div class="note">
+      <strong>Note:</strong> If an update has recently been published and is not
+      appearing yet, run <code>sudo apt clean</code> followed by
+      <code>sudo apt update</code>.
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; Simply IP Services
+</footer>
+
 </body>
 </html>
